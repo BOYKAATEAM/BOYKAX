@@ -34,7 +34,7 @@ end
 else
 print('\27[0;35m┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n لم يتم حفظ التوكن ارسل لي التوكن الان')
 end 
-os.execute('lua BOYKAXX.lua')
+os.execute('lua BOYKAX.lua')
 end
 if not database:get(id_server..":SUDO:ID") then
 io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي ↓ :\na┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n\27[0;33;49m')
@@ -45,7 +45,7 @@ database:set(id_server..":SUDO:ID",SUDOID)
 else
 print('\27[0;31m┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n لم يتم حفظ ايدي المطور الاساسي ارسله مره اخره')
 end 
-os.execute('lua BOYKAXX.lua')
+os.execute('lua BOYKAX.lua')
 end
 if not database:get(id_server..":SUDO:USERNAME") then
 io.write('\27[1;31m ↓ ارسل معرف المطور الاساسي :\n SEND ID FOR SIDO : \27[0;39;49m')
@@ -56,7 +56,7 @@ database:set(id_server..":SUDO:USERNAME",'@'..SUDOUSERNAME)
 else
 print('\n\27[1;34m لم يتم حفظ معرف المطور :')
 end 
-os.execute('lua BOYKAXX.lua')
+os.execute('lua BOYKAX.lua')
 end
 local create_config_auto = function()
 config = {
@@ -94,7 +94,7 @@ echo -e "\033[38;5;208m"
 echo -e "                                                  "
 echo -e "\033[0;00m"
 echo -e "\e[36m"
-./tg -s ./BOYKAXX.lua -p PROFILE --bot=$token
+./tg -s ./BOYKAX.lua -p PROFILE --bot=$token
 done
 ]])  
 file:close()  
@@ -1048,10 +1048,10 @@ echo '*———————————~*\n✺✔{ مـده تـشغيـل ال
 end
 
 if text == 'تحديث السورس ❃' and DevBOYKAXW(msg) then 
-os.execute('rm -rf BOYKAXX.lua')
-os.execute('wget https://github.com/BOYKAATEAM/BOYKAX/master/BOYKAXX.lua')
+os.execute('rm -rf BOYKAX.lua')
+os.execute('wget https://github.com/BOYKAATEAM/BOYKAX/master/BOYKAX.lua')
 send(msg.chat_id_, msg.id_,' ❃∫ تم تحديث السورس \n ❃∫ لديك اخر اصدار لسورس بويكا\n ❃∫ الاصدار » { 1.3v}')
-dofile('BOYKAXX.lua')  
+dofile('BOYKAX.lua')  
 end
 if text == 'الاصدار ❃' and DevBOYKAXW(msg) then 
 database:del(bot_id..'Srt:Bot') 
@@ -2299,10 +2299,10 @@ send(msg.chat_id_, msg.id_,' ❃∫ لا تستطيع استخدام البوت 
 end
 return false
 end
-os.execute('rm -rf BOYKAXX.lua')
-os.execute('wget https://raw.githubusercontent.com/BOYKAXTEAM/BOYKAX/master/BOYKAXX.lua')
+os.execute('rm -rf BOYKAX.lua')
+os.execute('wget https://raw.githubusercontent.com/BOYKAXTEAM/BOYKAX/master/BOYKAX.lua')
 send(msg.chat_id_, msg.id_,' ❃∫ تم تحديث السورس \n ❃∫ لديك اخر اصدار لسورس بويكا\n ❃∫ الاصدار » { 1.3v}')
-dofile('BOYKAXX.lua')  
+dofile('BOYKAX.lua')  
 end
 
 if text and text:match("^تغير الاشتراك$") and DevBOYKAXW(msg) then  
@@ -3463,7 +3463,7 @@ send(msg.chat_id_, msg.id_,' ❃∫ تم فتح التكرار')
 end
 --------------------------------------------------------------------------------------------------------------
 if text == 'تحديث' and DevBOYKAXW(msg) then    
-dofile('BOYKAXX.lua')  
+dofile('BOYKAX.lua')  
 send(msg.chat_id_, msg.id_, ' ❃∫ تم تحديث جميع الملفات') 
 end 
 if text == ("مسح قائمه العام") and DevBOYKAXW(msg) then
@@ -3899,7 +3899,7 @@ local json_file, res = https.request("https://raw.githubusercontent.com/BOYKAXTE
 if res == 200 then
 os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
-dofile('BOYKAXX.lua')  
+dofile('BOYKAX.lua')  
 else
 send(msg.chat_id_, msg.id_," ❃∫ عذرا الملف لايدعم سورس بويكا \n") 
 end
@@ -3921,7 +3921,7 @@ local chek = io.open("File_Bot/"..file,'w+')
 chek:write(json_file)
 chek:close()
 send(msg.chat_id_, msg.id_,t) 
-dofile('BOYKAXX.lua')  
+dofile('BOYKAX.lua')  
 else
 send(msg.chat_id_, msg.id_," ❃∫ عذرا الملف لايدعم سورس بويكا \n") 
 end
