@@ -137,17 +137,17 @@ end
 _redis = load_redis()  
 --------------------------------------------------------------------------------------------------------------
 print([[
-┏┓━━━━━━━━━━━┏┓━━━━━━━━
-┃┃━━━━━━━━━━━┃┃━━━━━━━━
-┃┗━┓┏━━┓┏┓━┏┓┃┃┏┓┏━━┓         
-┃┏┓┃┃┏┓┃┃┃━┃┃┃┗┛┛┗━┓┃        
-┃┗┛┃┃┗┛┃┃┗━┛┃┃┏┓┓┃┗┛┗┓  
-┗━━┛┗━━┛┗━┓┏┛┗┛┗┛┗━━━┛ 
-━━━━━━━━┏━┛┃━━━━━━━━━━           
-━━━━━━━━┗━━┛━━━━━━━━━━━
-> CH › @pvv_v
-> CH › @BOBBW
-~> DEVELOPER › @KKKKK4
+/$$   /$$                                                  
+| $$  /$$/                                                  
+| $$ /$$/   /$$$$$$   /$$$$$$$  /$$$$$$   /$$$$$$   /$$$$$$ 
+| $$$$$/   |____  $$ /$$_____/ /$$__  $$ /$$__  $$ /$$__  $$
+| $$  $$    /$$$$$$$|  $$$$$$ | $$  \ $$| $$$$$$$$| $$  \__/
+| $$\  $$  /$$__  $$ \____  $$| $$  | $$| $$_____/| $$      
+| $$ \  $$|  $$$$$$$ /$$$$$$$/| $$$$$$$/|  $$$$$$$| $$      
+|__/  \__/ \_______/|_______/ | $$____/  \_______/|__/      
+                              | $$                          
+                              | $$                          
+                              |__/
 ]])
 sudos = dofile("./Info.lua") 
 SUDO = tonumber(sudos.SUDO)
@@ -286,9 +286,9 @@ return var
 end 
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1264922434) then  
-var = 'زربه مال بويكا'
-elseif tonumber(user_id) == tonumber(400866650) then
-var = 'باعص المطورين 🙋‍♂️'
+var = 'زربه مال كاسبر'
+elseif tonumber(user_id) == tonumber(1315944454) then
+var = 'مبرمج السورس'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif database:sismember(bot_id.."DEV:Sudo:T", user_id) then 
@@ -1050,12 +1050,12 @@ end
 if text == 'تحديث السورس ❃' and DevBOYKAXW(msg) then 
 os.execute('rm -rf BOYKAX.lua')
 os.execute('wget https://github.com/BOYKAATEAM/BOYKAX/master/BOYKAX.lua')
-send(msg.chat_id_, msg.id_,' ❃∫ تم تحديث السورس \n ❃∫ لديك اخر اصدار لسورس بويكا\n ❃∫ الاصدار » { 1.3v}')
+send(msg.chat_id_, msg.id_,' ❃∫ تم تحديث السورس \n ❃∫ لديك اخر اصدار لسورس كاسبر\n ❃∫ الاصدار » { 1.3v}')
 dofile('BOYKAX.lua')  
 end
 if text == 'الاصدار ❃' and DevBOYKAXW(msg) then 
 database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' ❃∫ اصدار سورس بويكا \n ❃∫ الاصدار »{ 1.3v}')
+send(msg.chat_id_, msg.id_,' ❃∫ اصدار سورس كاسبر \n ❃∫ الاصدار »{ 1.3v}')
 end
 if text == 'قناه تحديثات البوت ❃' and DevBOYKAXW(msg) then 
 database:del(bot_id..'Srt:Bot') 
@@ -2301,7 +2301,7 @@ return false
 end
 os.execute('rm -rf BOYKAX.lua')
 os.execute('wget https://raw.githubusercontent.com/BOYKAXTEAM/BOYKAX/master/BOYKAX.lua')
-send(msg.chat_id_, msg.id_,' ❃∫ تم تحديث السورس \n ❃∫ لديك اخر اصدار لسورس بويكا\n ❃∫ الاصدار » { 1.3v}')
+send(msg.chat_id_, msg.id_,' ❃∫ تم تحديث السورس \n ❃∫ لديك اخر اصدار لسورس كاسبر\n ❃∫ الاصدار » { 1.3v}')
 dofile('BOYKAX.lua')  
 end
 
@@ -3845,7 +3845,7 @@ end,nil)
 end
 end
 if text == 'الملفات' and DevBOYKAXW(msg) then
-t = ' ❃∫ ملفات السورس بويكا ↓\n≪━━━━━━𝘽𝙆━━━━━━≫ \n'
+t = ' ❃∫ ملفات السورس كاسبر ↓\n≪━━━━━━𝘽𝙆━━━━━━≫ \n'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
 if v:match(".lua$") then
@@ -3862,8 +3862,8 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n ❃∫ اهلا بك في متجر ملفات بويكا\n ❃∫ ملفات السورس ↓\n≪━━━━━━𝘽𝙆━━━━━━≫\n\n"
-local TextE = "\n≪━━━━━━𝘽𝙆━━━━━━≫\n ❃∫ علامة تعني { ✓ } ملف مفعل\n ❃∫ علامة تعني { ✘ } ملف معطل\n ❃∫ قناة سورس بويكا ↓\n".." ❃∫ [اضغط هنا لدخول](t.me/pvv_v) \n"
+local TextS = "\n ❃∫ اهلا بك في متجر ملفات كاسبر\n ❃∫ ملفات السورس ↓\n≪━━━━━━𝘽𝙆━━━━━━≫\n\n"
+local TextE = "\n≪━━━━━━𝘽𝙆━━━━━━≫\n ❃∫ علامة تعني { ✓ } ملف مفعل\n ❃∫ علامة تعني { ✘ } ملف معطل\n ❃∫ قناة سورس كاسبر ↓\n".." ❃∫ [اضغط هنا لدخول](t.me/HH6HHH) \n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
 local Check_File_is_Found = io.open("File_Bot/"..name,"r")
@@ -3901,7 +3901,7 @@ os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
 dofile('BOYKAX.lua')  
 else
-send(msg.chat_id_, msg.id_," ❃∫ عذرا الملف لايدعم سورس بويكا \n") 
+send(msg.chat_id_, msg.id_," ❃∫ عذرا الملف لايدعم سورس كاسبر\n") 
 end
 return false
 end
@@ -3923,7 +3923,7 @@ chek:close()
 send(msg.chat_id_, msg.id_,t) 
 dofile('BOYKAX.lua')  
 else
-send(msg.chat_id_, msg.id_," ❃∫ عذرا الملف لايدعم سورس بويكا \n") 
+send(msg.chat_id_, msg.id_," ❃∫ عذرا الملف لايدعم سورس كاسبر\n") 
 end
 return false
 end
@@ -8728,8 +8728,8 @@ end
 return false
 end
 
-if text == ""..(database:get(bot_id..'Name:Bot') or 'بويكا').."" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+if text == ""..(database:get(bot_id..'Name:Bot') or 'كاسبر').."" then  
+Namebot = (database:get(bot_id..'Name:Bot') or 'كاسبر')
 local BOYKAX_Msg = {
 'عمغي 🥺💕.',
 'هاا شتريد كافي ☹️.',
@@ -9329,7 +9329,7 @@ end
 end
 end
 -------------------------------
-if text == ""..(database:get(bot_id..'Name:Bot') or 'بويكا').." غادر" or text == 'غادر' then  
+if text == ""..(database:get(bot_id..'Name:Bot') or 'كاسبر').." غادر" or text == 'غادر' then  
 if Sudo(msg) and not database:get(bot_id..'Left:Bot'..msg.chat_id_)  then 
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
 send(msg.chat_id_, msg.id_,'❃∫ تم مغادرة المجموعه') 
@@ -9338,7 +9338,7 @@ end
 return false  
 end
 if text == 'بوت' then
-Namebot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+Namebot = (database:get(bot_id..'Name:Bot') or 'كاسبر')
 send(msg.chat_id_, msg.id_,'اسمي ['..Namebot..'] ')
 end
 if text == 'الاحصائيات' then
@@ -10712,7 +10712,7 @@ if (text and text == "تفعيل اوامر التحشيش") then
 send(msg.chat_id_, msg.id_, '  ❃∫ تم تفعيل اوامر التحشيش')
 database:del(bot_id.."Fun_Bots:"..msg.chat_id_)
 end
-local Name_Bot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+local Name_Bot = (database:get(bot_id..'Name:Bot') or 'كاسبر')
 if not database:get(bot_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
